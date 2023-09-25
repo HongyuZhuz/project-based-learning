@@ -1,6 +1,5 @@
 const calculator = document.querySelector('.calculator');
 const keys = calculator.querySelector('.calculator__keys');
-console.log('Hello');
 keys.addEventListener('click', e =>{
     if(e.target.matches('button')){
         const key = e.target;
@@ -8,9 +7,9 @@ keys.addEventListener('click', e =>{
         if(!action){console.log('number key!')};
 
         if (
-            action === 'add' ||
-            action === 'subtract' ||
-            action === 'multiply' ||
+            action == 'add' ||
+            action == 'subtract' ||
+            action == 'multiply' ||
             action === 'divide'
             ) {
             console.log('operator key!')
